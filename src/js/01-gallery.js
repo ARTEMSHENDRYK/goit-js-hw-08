@@ -2,6 +2,11 @@
 import { galleryItems } from './gallery-items';
 // Change code below this line
 
+// Описаний в документації
+import SimpleLightbox from "simplelightbox";
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 console.log(galleryItems);
 
 //Створення і рендер розмітки на підставі масиву даних galleryItems і наданого шаблону елемента галереї.
@@ -18,10 +23,10 @@ const galleryMarkup = galleryItems.reduce((acc, { preview, original, description
 
 galleryRef.innerHTML = galleryMarkup;
 
-// const gallery = new SimpleLightbox('.gallery a',
-//   {
-//     captionsData: 'alt',
-//     captionDelay: 250,
-//     captionPosition: 'bottom', //Default value
-//   }
-// );
+const gallery = new SimpleLightbox('.gallery a',
+  {
+    captionsData: 'alt',
+    captionDelay: 250,
+    captionPosition: 'bottom', //Default value
+  }
+);
