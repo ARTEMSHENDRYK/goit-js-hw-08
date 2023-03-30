@@ -1,12 +1,8 @@
-// Описаний в документації
 import SimpleLightbox from "simplelightbox";
-// Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
 // Add imports above this line
 import { galleryItems } from './gallery-items';
 // Change code below this line
-
-console.log(galleryItems);
 
 //Створення і рендер розмітки на підставі масиву даних galleryItems і наданого шаблону елемента галереї.
 const galleryRef = document.querySelector('.gallery');
