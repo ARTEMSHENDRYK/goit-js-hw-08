@@ -1,11 +1,9 @@
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
-// Add imports above this line
-import { galleryItems } from './gallery-items';
-// Change code below this line
+import { galleryItems } from "./gallery-items";
 
 //Створення і рендер розмітки на підставі масиву даних galleryItems і наданого шаблону елемента галереї.
-const galleryRef = document.querySelector('.gallery');
+const galleryRef = document.querySelector(".gallery");
 
 const galleryMarkup = galleryItems.reduce((acc, { preview, original, description }) =>
   acc +=
@@ -18,9 +16,9 @@ const galleryMarkup = galleryItems.reduce((acc, { preview, original, description
 
 galleryRef.innerHTML = galleryMarkup;
 
-const gallery = new SimpleLightbox('.gallery a',
+const gallery = new SimpleLightbox(".gallery a",
   {
-    captionsData: 'alt',
-    captionDelay: 250,
+    captionsData: "alt",
+    captionDelay: 250
   }
 );
