@@ -14,4 +14,4 @@ player.on("timeupdate",
   )
 );
 
-player.setCurrentTime(localStorage.getItem(LOCALSTORAGE_KEY) || 0.01);
+player.setCurrentTime(localStorage.getItem(LOCALSTORAGE_KEY) || 0);
